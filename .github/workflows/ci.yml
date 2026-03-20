@@ -12,9 +12,6 @@ on:
   pull_request:
     branches: [main]          # Run on PRs targeting main
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 # JOBS: What should happen?
 jobs:
   # Job 1: Run tests
@@ -31,7 +28,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '24'
+          node-version: '20'
 
       # Step 3: Install dependencies
       - name: Install dependencies
@@ -58,7 +55,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '24'
+          node-version: '20'
 
       - name: Install dependencies
         run: npm install

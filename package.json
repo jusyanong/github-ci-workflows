@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "test": "node --test",
-    "build": "echo 'Building project...' && mkdir -p dist && cp -r src/* dist/",
+    "build": "echo 'Building project...' && mkdir -p dist && cp -r src/. dist/",
     "lint": "echo 'Linting code...' && exit 0"
   },
   "keywords": ["github-actions", "ci-cd", "demo"],
